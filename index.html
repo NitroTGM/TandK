@@ -5,24 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Modern Site</title>
   <link rel="stylesheet" href="styles.css">
-
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
+  <!-- PARTICLES -->
+  <div class="particles"></div>
+
   <!-- NAV -->
   <header class="nav">
     <h1 class="logo">Tiaan.dev</h1>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Work</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
+    <div class="nav-right">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <button id="themeToggle">🌙</button>
+    </div>
   </header>
 
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero fade-in">
     <div class="glass">
       <h2>Build Something Beautiful</h2>
       <p>Clean. Modern. Minimal.</p>
@@ -32,24 +36,24 @@
 
   <!-- FEATURES -->
   <section class="features">
-    <div class="card">
+    <div class="card fade-in">
       <h3>⚡ Fast</h3>
-      <p>Optimized performance for everything.</p>
+      <p>Optimized performance.</p>
     </div>
-    <div class="card">
+    <div class="card fade-in">
       <h3>🎨 Clean</h3>
-      <p>Minimal and aesthetic design.</p>
+      <p>Minimal aesthetic.</p>
     </div>
-    <div class="card">
+    <div class="card fade-in">
       <h3>📱 Responsive</h3>
-      <p>Looks good on every device.</p>
+      <p>All devices ready.</p>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
+  <footer class="fade-in">
     <p>© 2026 Tiaan.dev</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
