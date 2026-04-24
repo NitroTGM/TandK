@@ -1,32 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>IT Tools Pure JS</title>
-<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TK Hubs</title>
+
+<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<div class="app">
-  <div class="sidebar">
-    <h2>⚡ Tools</h2>
-    <button onclick="setTool('ip')">IP Lookup</button>
-    <button onclick="setTool('base64')">Base64 Encode</button>
-    <button onclick="setTool('decode')">Base64 Decode</button>
-    <button onclick="setTool('password')">Password</button>
-    <button onclick="setTool('sha256')">SHA256</button>
-    <button onclick="setTool('length')">Text Length</button>
-  </div>
+<nav class="nav">
+    <div class="logo">TK Hubs</div>
 
-  <div class="main">
-    <div class="card">
-      <h2 id="toolTitle">Tool</h2>
-      <input id="input" placeholder="Enter value">
-      <button onclick="runTool()">Run</button>
-      <pre id="output"></pre>
+    <div class="dev-banner">
+        🚧 This platform is still under development — big features loading soon.
     </div>
-  </div>
-</div>
+</nav>
+
+<section class="hero">
+
+    <div class="left">
+        <h1>
+            Welcome to <br>
+            <span>TK Hubs</span>
+        </h1>
+
+        <p>
+            Your central hub for innovation, tools & smart solutions.
+        </p>
+
+        <button class="cta" onclick="toggleChat()">
+            Open Live Chat →
+        </button>
+
+        <div class="features">
+            <div class="card">
+                <h3>🚀 Innovative</h3>
+                <p>Building the future with modern tech.</p>
+            </div>
+
+            <div class="card">
+                <h3>🛠 Powerful Tools</h3>
+                <p>Smart systems launching soon.</p>
+            </div>
+
+            <div class="card">
+                <h3>⚡ Reliable</h3>
+                <p>Performance you can trust.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="right">
+        <div class="chat-box" id="chatBox">
+            <div class="chat-header">
+                <span>● Live Chat</span>
+                <button onclick="toggleChat()">✕</button>
+            </div>
+
+            <div class="chat-messages" id="messages">
+                <div class="message bot">
+                    Hey 👋 Welcome to TK Hubs.<br>
+                    How can we help you today?
+                </div>
+            </div>
+
+            <div class="chat-input">
+                <input id="input" placeholder="Type your message..." />
+                <button onclick="sendMessage()">➤</button>
+            </div>
+        </div>
+    </div>
+
+</section>
 
 <script src="script.js"></script>
 </body>
